@@ -1,0 +1,71 @@
+.app-wrapper {
+  margin: 0 auto;
+  display: grid;
+  width: auto;
+
+  grid-template-areas:
+    "h h"
+    "n c";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+}
+
+.header {
+  grid-area: h;
+  background-color: #38ada9;
+}
+
+.header img {
+  width: 60px;
+}
+
+.nav {
+  grid-area: n;
+  background-color: #f8c291;
+}
+
+.content {
+  grid-area: c;
+  background-color: #82ccdd;
+}
+
+.profile-wrapper {
+  margin: 50px 50px 50px 50px;
+  display: grid;
+  width: auto;
+
+  grid-template-areas:
+    "mainpanel mainpanel mainpanel"
+    "myintro myposts lastphotos";
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 6fr 3fr;
+}
+
+.mainBackground {
+  text-align: -webkit-center;
+}
+
+.mainBackground img {
+  width: 30%;
+}
+
+.mainPanel {
+  grid-area: mainpanel;
+  background-color: #38ada9;
+
+  border-radius: 10px;
+}
+.myIntro {
+  grid-area: myintro;
+  background-color: #1a9159;
+}
+.myPosts {
+  grid-area: myposts;
+  background-color: #92bb31;
+}
+.lastPhotos {
+  grid-area: lastphotos;
+  background-color: #6b1c20;
+}
